@@ -1,7 +1,7 @@
 import argparse
 from typing import Sequence
 
-from filename_validation import validate_filename
+from filename_validation.validate_filename import validate_filename
 
 
 def main(argv: Sequence[str] | None = None) -> int:
