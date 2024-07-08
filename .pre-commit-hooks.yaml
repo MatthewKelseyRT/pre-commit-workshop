@@ -1,0 +1,10 @@
+  - id: validate-filename
+    name: validate-filename
+    description: This hook checks filename length
+    entry: validate-filename
+    language: python
+    # require_serial: true # To run this hook in serial
+
+    # --
+    # All config options: https://pre-commit.com/#creating-new-hooks
+    # --
