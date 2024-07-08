@@ -17,6 +17,17 @@ repos:
       - id: check-executables-have-shebangs
       - id: check-shebang-scripts-are-executable
 
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.4.10
+    hooks:
+      - id: ruff
+        args: [--fix, --exit-non-zero-on-fix, --show-fixes]
+      - id: ruff-format
+
 # --
+# Hooks run in the order they are defined
+# Use args: [] to pass additional arguments to hooks
+# The args passed in here are only used when pre-commit is run, not when doing it manually
 # See https://github.com/pre-commit/pre-commit-hooks for more hooks
+# Supported 3rd party hooks: https://pre-commit.com/hooks.html
 # --
